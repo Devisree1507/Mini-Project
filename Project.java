@@ -9,15 +9,10 @@ public class Project {
 	public static void main(String[] args) throws InterruptedException {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	driver.get("");
 	System.out.println("Url Launched");
 	Thread.sleep(3000);
-	WebElement search = driver.findElement(By.name("username"));
-	search.sendKeys("Admin");
-	Thread.sleep(3000);
-	WebElement pass = driver.findElement(By.name("password"));
-	pass.sendKeys("admin123");
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
+	
 	
 }
 }
